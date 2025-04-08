@@ -3,30 +3,557 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Personal Portfolio</title>
     <link rel="stylesheet" href="myportfolio.css">
+    <link rel="shortcut icon" href="https://i.postimg.cc/9fqYVvxh/logo.png" type="image/x-icon">
 </head>
 <body>
+    <main>
+        <aside class="sidebar " data-sidebar>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="./main img.jpg" alt="avatar" width="80" >
+                </figure>
 
-    <header>
-        <h1>hey github</h1>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-    </header>
+                <div class="info-content">
+                    <h1 class="name" title="Vrushali Ghule">Vrushali Ghule</h1>
+                    <p class="title">Web Developer</p>
+                </div>
 
-    <section class="hero">
-        <h2>Hello, I'm Vrushali Balasaheb Ghule</h2>
-        <p>A Web Developer passionate about creating stunning websites.</p>
-        <a class="btn">View Projects</a>
-    </section>
+                <button class="info-more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+            </div>
+
+            <div class="sidebar-info-more">
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+
+                            <a href="mailto:vrushali@example.com" class="contact-link">vrushalighule137@gmail.com</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Phone</p>
+
+                            <a href="tel:+12133522795" class="contact-link">8381059772</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Birthday</p>
+
+                            <time datetime="1982-06-23">July 13, 2000</time>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+
+                            <address>Nanded city Pune</address>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="separator"></div>
+
+                <ul class="social-list">
+                    <li class="social-item"><a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li class="social-item"><a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li class="social-item"><a href="#" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="main-content">
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Blog</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+                </ul>
+            </nav>
+
+            <article class="about active" data-page="about">
+                <header>
+                    <h2 class="h2 article-title">About me</h2>
+                </header>
+
+                <section class="about-text">
+                    <p>I am a Front End Developer with 1.5 years of experience in mobile application and web development. I specialize in creating highly interactive, user-friendly, and visually appealing applications.</p>
+                    <p>My expertise in HTML, CSS, Angular with Ionic, TypeScript, and JavaScript which I use to develop responsive and optimized applications for Android devices. During my job, I successfully created multiple client applications. My attention to detail and passion for technology help me deliver innovative solutions. I am an excellent communicator and a reliable team player who can also work effectively independently.</p>
+                </section>
+
+                <section class="service">
+                    <h3 class="h3 service-title">What I'm doing</h3>
+                
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://i.postimg.cc/4389jZkP/icon-design.png" alt="icon" width="40">
+                            </div>
+                
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Front-End Development</h4>
+                                <p class="service-item-text">Building responsive and user-friendly web applications using HTML, CSS, Angular, and TypeScript.</p>
+                            </div>
+                        </li>
+                
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://i.postimg.cc/ZqgqrqzG/icon-dev.png" alt="icon" width="40">
+                            </div>
+                
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Mobile App Development</h4>
+                                <p class="service-item-text">Creating cross-platform mobile applications with Angular and Ionic framework, optimized for Android devices.</p>
+                            </div>
+                        </li>
+                
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://i.postimg.cc/xjLdzYxZ/icon-app.png" alt="icon" width="40">
+                            </div>
+                
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Real-Time Client Projects</h4>
+                                <p class="service-item-text">Developed successful apps like MahaApp, YuvaRashtra, and Local Voice during my internship for real clients.</p>
+                            </div>
+                        </li>
+                
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://i.postimg.cc/0NL8zHpx/icon-photo.png" alt="icon" width="40">
+                            </div>
+                
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Problem Solving & Innovation</h4>
+                                <p class="service-item-text">Focused on delivering innovative and detail-oriented solutions that address real-world challenges.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                
+
+                <section class="testimonials">
+                    <h3 class="h3 testimonials-title">Testimonials</h3>
+                  
+                    <ul class="testimonials-list has-scrollbar">
+                      <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+                          <figure class="testimonials-avatar-box">
+                            <img src="https://i.postimg.cc/zGDHfn3G/avatar-1.png" alt="avatar" data-testimonials-avatar width="60">
+                          </figure>
+                  
+                          <h4 class="h4 testimonials-item-title" data-testimonials-title>Boss</h4>
+                  
+                          <div class="testimonials-text" data-testimonials-text>
+                            <p>Vrushali was a valuable part of our mobile app development team. Her work on the YuvaRashtra project was meticulous, and she brought great attention to usability and clean UI practices. Highly recommended for Angular and Ionic-based development.</p>
+                          </div>
+                        </div>
+                      </li>
+                  
+                      <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+                          <figure class="testimonials-avatar-box">
+                            <img src="https://i.postimg.cc/DwY0yHtx/avatar-2.png" alt="avatar" data-testimonials-avatar width="60">
+                          </figure>
+                  
+                          <h4 class="h4 testimonials-item-title" data-testimonials-title>Team Lead</h4>
+                  
+                          <div class="testimonials-text" data-testimonials-text>
+                            <p>I had the pleasure of mentoring Vrushali during her internship. She quickly grasped concepts and implemented complex features like notification systems and form validation with precision. Her dedication is truly impressive.</p>
+                          </div>
+                        </div>
+                      </li>
+                  
+                      <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+                          <figure class="testimonials-avatar-box">
+                            <img src="https://i.postimg.cc/zGDHfn3G/avatar-1.png" alt="avatar" data-testimonials-avatar width="60">
+                          </figure>
+                  
+                          <h4 class="h4 testimonials-item-title" data-testimonials-title>Ankit Deshmukh</h4>
+                  
+                          <div class="testimonials-text" data-testimonials-text>
+                            <p>Vrushali's contribution to the MahaApp project helped us meet our launch timeline smoothly. She’s proactive, detail-oriented, and takes feedback constructively. A dependable team member and a rising star in development!</p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </section>
+                  
+
+                <div class="modal-container " data-modal-container>
+                    <div class="overlay " data-overlay></div>
+
+                    <section class="testimonials-modal">
+                        <button class="modal-close-btn" data-modal-close-btn><ion-icon name="close-outline"></ion-icon></button>
+
+                        <div class="modal-img-wrapper">
+                            <figure class="modal-avatar-box">
+                                <img src="https://i.postimg.cc/zGDHfn3G/avatar-1.png" alt="Daniel Lewis" width="80" data-modal-img>
+                            </figure>
+
+                            <img src="https://i.postimg.cc/mZ00RwX7/icon-quote.png" alt="quote icon">
+                        </div>
+
+                        <div class="modal-content">
+                            <h4 class="h3 modal-title" data-modal-title>Vrushali Ghule</h4>
+                            <time datetime="2023-06-14">14 June, 2023</time>
+
+                            <div class="modal-text" data-modal-text>
+                                <p>vru was hired to create a corporate identity. It's modern, clean and with a beautiful design that got a lot of praises from colleagues and visitors. We were very pleased with the work done. He has a lot of experience and is very concerned about the needs of client.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+<!-- 
+                <section class="clients">
+                    <h3 class="h3 clients-title">Clients</h3>
+
+                    <ul class="clients-list has-scrollbar">
+                        <li class="clients-item">
+                            <a href="#"><img src="https://i.postimg.cc/YqfKyG66/logo-1-color.png" alt="logo"></a>
+                        </li>
+
+                        <li class="clients-item">
+                            <a href="#"><img src="https://i.postimg.cc/fWm6JtgG/logo-2-color.png" alt="logo"></a>
+                        </li>
+
+                        <li class="clients-item">
+                            <a href="#"><img src="https://i.postimg.cc/Bb07xpwd/logo-3-color.png" alt="logo"></a>
+                        </li>
+
+                        <li class="clients-item">
+                            <a href="#"><img src="https://i.postimg.cc/hv1yMmkh/logo-4-color.png" alt="logo"></a>
+                        </li>
+
+                        <li class="clients-item">
+                            <a href="#"><img src="https://i.postimg.cc/ry1P86Dc/logo-5-color.png" alt="logo"></a>
+                        </li>
+
+                        <li class="clients-item">
+                            <a href="#"><img src="https://i.postimg.cc/SsWDN8NV/logo-6-color.png" alt="logo"></a>
+                        </li>
+                    </ul>
+                </section> -->
+
+            </article>
+            
+            <article class="resume" data-page="resume">
+                <header>
+                  <h2 class="h2 article-title">Resume</h2>
+                </header>
+              
+                <section class="timeline">
+                  <div class="title-wrapper">
+                    <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+                    <h3 class="h3">Education</h3>
+                  </div>
+              
+                  <ol class="timeline-list">
+              
+                    <li class="timeline-item">
+                      <h4 class="h4 timeline-item-title">Master of Computer Applications (MCA) - SPPU, Pune</h4>
+                      <span>2022 - 2024</span>
+                      <p class="timeline-text">
+                        Completed MCA with a strong focus on full-stack development, Angular, and mobile app technologies. Gained hands-on experience through academic projects and industry work experience.<br>
+                        <strong>Percentage:</strong> 72.04%
+                      </p>
+                    </li>
+              
+                    <li class="timeline-item">
+                      <h4 class="h4 timeline-item-title">Bachelor of Computer Applications (BCA) - Pune University</h4>
+                      <span>2018 - 2021</span>
+                      <p class="timeline-text">
+                        Studied core subjects such as programming, databases, software engineering, and networking. Actively participated in coding competitions and tech events.<br>
+                        <strong>Percentage:</strong> 70%
+                      </p>
+                    </li>
+              
+                    <li class="timeline-item">
+                      <h4 class="h4 timeline-item-title">12th Grade (Commerce) - Maharashtra State Board</h4>
+                      <span>2017 - 2018</span>
+                      <p class="timeline-text">
+                        Completed 12th grade from Commerce stream with additional focus on coding.<br>
+                        <strong>Percentage:</strong> 54%
+                      </p>
+                    </li>
+              
+                    <li class="timeline-item">
+                      <h4 class="h4 timeline-item-title">10th Grade - Maharashtra State Board</h4>
+                      <span>2015 - 2016</span>
+                      <p class="timeline-text">
+                        Completed 10th with foundational studies in all core subjects.<br>
+                        <strong>Percentage:</strong> 58%
+                      </p>
+                    </li>
+              
+                  </ol>
+                </section>
+              </article>
+              
+
+              <article class="portfolio" data-page="portfolio">
+                <header>
+                  <h2 class="h2 article-title">Portfolio</h2>
+                </header>
+              
+                <section class="projects">
+                  <ul class="filter-list">
+                    <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+                    <li class="filter-item"><button data-filter-btn>Web Design</button></li>
+                    <li class="filter-item"><button data-filter-btn>Applications</button></li>
+                    <li class="filter-item"><button data-filter-btn>Web Development</button></li>
+                  </ul>
+              
+                  <div class="filter-select-box">
+                    <button class="filter-select" data-select>
+                      <div class="select-value" data-select-value>Select Category</div>
+                      <div class="select-icon">
+                        <ion-icon name="chevron-down"></ion-icon>
+                      </div>
+                    </button>
+              
+                    <ul class="select-list">
+                      <li class="select-item"><button data-select-item>All</button></li>
+                      <li class="select-item"><button data-select-item>Web Design</button></li>
+                      <li class="select-item"><button data-select-item>Applications</button></li>
+                      <li class="select-item"><button data-select-item>Web Development</button></li>
+                    </ul>
+                  </div>
+              
+                  <ul class="project-list">
+              
+                    <li class="project-item active" data-filter-item data-category="applications">
+                      <a href="#">
+                        <figure class="project-img">
+                          <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                          <img src="https://i.postimg.cc/y6JKJgBW/ecommerce.jpg" alt="MahaApp" loading="lazy">
+                        </figure>
+                        <h3 class="project-title">MahaApp</h3>
+                        <p class="project-category">Service-based mobile app for providers and users</p>
+                      </a>
+                    </li>
+              
+                    <li class="project-item active" data-filter-item data-category="applications">
+                      <a href="#">
+                        <figure class="project-img">
+                          <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                          <img src="https://i.postimg.cc/rpDn4Pwq/yuva.jpg" alt="YuvaRashtra" loading="lazy">
+                        </figure>
+                        <h3 class="project-title">YuvaRashtra</h3>
+                        <p class="project-category">Mobile app for raising political issues in society</p>
+                      </a>
+                    </li>
+              
+                    <li class="project-item active" data-filter-item data-category="applications">
+                      <a href="#">
+                        <figure class="project-img">
+                          <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                          <img src="https://i.postimg.cc/sX3dPG1k/local-voice.jpg" alt="Local Voice" loading="lazy">
+                        </figure>
+                        <h3 class="project-title">Local Voice</h3>
+                        <p class="project-category">Platform for users to raise and share public issues</p>
+                      </a>
+                    </li>
+              
+                    <li class="project-item active" data-filter-item data-category="web development">
+                      <a href="#">
+                        <figure class="project-img">
+                          <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                          <img src="https://i.postimg.cc/zG7xh2SY/fertilizer.jpg" alt="Agriculture Fertilizer" loading="lazy">
+                        </figure>
+                        <h3 class="project-title">Agriculture Fertilizer</h3>
+                        <p class="project-category">Web project for farmers to book fertilizers online</p>
+                      </a>
+                    </li>
+              
+                    <li class="project-item active" data-filter-item data-category="web development">
+                      <a href="#">
+                        <figure class="project-img">
+                          <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                          <img src="https://i.postimg.cc/8c0SJBPz/pet-clinic.jpg" alt="Pet Clinic" loading="lazy">
+                        </figure>
+                        <h3 class="project-title">Pet Clinic</h3>
+                        <p class="project-category">College project for pet registration and healthcare</p>
+                      </a>
+                    </li>
+              
+                    <li class="project-item active" data-filter-item data-category="applications">
+                      <a href="#">
+                        <figure class="project-img">
+                          <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                          <img src="https://i.postimg.cc/nzp2jRQF/smart-society.jpg" alt="Smart Society" loading="lazy">
+                        </figure>
+                        <h3 class="project-title">Smart Society</h3>
+                        <p class="project-category">Mobile app for managing members and rent/expenses</p>
+                      </a>
+                    </li>
+              
+                    <li class="project-item active" data-filter-item data-category="web design">
+                      <a href="#">
+                        <figure class="project-img">
+                          <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                          <img src="https://i.postimg.cc/gjZqNkQK/zebions.jpg" alt="Zebion's" loading="lazy">
+                        </figure>
+                        <h3 class="project-title">Zebion's</h3>
+                        <p class="project-category">Read-only e-commerce site with product viewing</p>
+                      </a>
+                    </li>
+              
+                  </ul>
+                </section>
+              </article>
+              
+              <article class="blog" data-page="blog">
+                <header>
+                  <h2 class="h2 article-title">Blog</h2>
+                </header>
+              
+                <section class="blog-posts">
+                  <ul class="blog-posts-list">
+              
+                    <li class="blog-post-item">
+                      <a href="#">
+                        <figure class="blog-banner-box">
+                          <img src="https://i.postimg.cc/yxhctS0q/blog-mobapp.jpg" alt="Building Mobile Apps with Ionic" loading="lazy">
+                        </figure>
+                        <div class="blog-content">
+                          <div class="blog-meta">
+                            <p class="blog-category">Mobile Development</p>
+                            <span class="dot"></span>
+                            <time datetime="2024-07-10">Jul 10, 2024</time>
+                          </div>
+                          <h3 class="h3 blog-item-title">Building Mobile Apps with Ionic</h3>
+                          <p class="blog-text">In this post, I share my journey of using Angular with Ionic to create cross-platform mobile apps during my internship. Projects like MahaApp and Smart Society taught me real-world integration and user-focused UI design.</p>
+                        </div>
+                      </a>
+                    </li>
+              
+                    <li class="blog-post-item">
+                      <a href="#">
+                        <figure class="blog-banner-box">
+                          <img src="https://i.postimg.cc/fRkFyyz4/blog-society.jpg" alt="Smart Society App - Project Breakdown" loading="lazy">
+                        </figure>
+                        <div class="blog-content">
+                          <div class="blog-meta">
+                            <p class="blog-category">Application</p>
+                            <span class="dot"></span>
+                            <time datetime="2024-06-28">Jun 28, 2024</time>
+                          </div>
+                          <h3 class="h3 blog-item-title">Smart Society App - Project Breakdown</h3>
+                          <p class="blog-text">This post dives into the challenges and features of the Smart Society App – from rent tracking to member data handling. It’s one of the most practical apps I developed using Angular & Ionic framework.</p>
+                        </div>
+                      </a>
+                    </li>
+              
+                    <li class="blog-post-item">
+                      <a href="#">
+                        <figure class="blog-banner-box">
+                          <img src="https://i.postimg.cc/hjVdTpnW/blog-ecomm.jpg" alt="Designing Zebion's e-Commerce Site" loading="lazy">
+                        </figure>
+                        <div class="blog-content">
+                          <div class="blog-meta">
+                            <p class="blog-category">Web Design</p>
+                            <span class="dot"></span>
+                            <time datetime="2024-06-15">Jun 15, 2024</time>
+                          </div>
+                          <h3 class="h3 blog-item-title">Designing Zebion's e-Commerce Site</h3>
+                          <p class="blog-text">Learn how I designed a read-only e-commerce site that allows users to browse products and locate nearby stores. This project focused on performance and clean UI without backend integration.</p>
+                        </div>
+                      </a>
+                    </li>
+              
+                    <li class="blog-post-item">
+                      <a href="#">
+                        <figure class="blog-banner-box">
+                          <img src="https://i.postimg.cc/mkkmDhD3/blog-fertilizer.jpg" alt="Agriculture Fertilizer Booking Platform" loading="lazy">
+                        </figure>
+                        <div class="blog-content">
+                          <div class="blog-meta">
+                            <p class="blog-category">Web Development</p>
+                            <span class="dot"></span>
+                            <time datetime="2024-05-30">May 30, 2024</time>
+                          </div>
+                          <h3 class="h3 blog-item-title">Agriculture Fertilizer Booking Platform</h3>
+                          <p class="blog-text">This project was designed to help farmers easily book fertilizers online. It taught me how to build simple and intuitive UIs with user needs in mind.</p>
+                        </div>
+                      </a>
+                    </li>
+              
+                  </ul>
+                </section>
+              </article>
+              
+
+              <article class="contact" data-page="contact">
+                <header>
+                  <h2 class="h2 article-title">Contact</h2>
+                </header>
+              
+                <!-- Google Maps - Set to Pune, India -->
+                <section class="mapbox" data-mapbox>
+                  <figure>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.147154780458!2d73.85674267493646!3d18.520430471753733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c06e9766efcb%3A0xb510aa7942f6e218!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1712678323034!5m2!1sen!2sin"
+                      width="400" height="300" loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                  </figure>
+                </section>
+              
+                <!-- Contact Form -->
+                <section class="contact-form">
+                  <h3 class="h3 form-title">Contact Form</h3>
+              
+                  <form action="mailto:vrushali.yourname@gmail.com" method="POST" enctype="text/plain">
+                    <div class="input-wrapper">
+                      <input type="text" name="fullname" class="form-input" placeholder="Full Name" required data-form-input>
+                      <input type="email" name="email" class="form-input" placeholder="Email Address" required data-form-input>
+                    </div>
+              
+                    <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+              
+                    <button class="form-btn" type="submit" data-form-btn>
+                      <ion-icon name="paper-plane"></ion-icon>
+                      <span>Send Message</span>
+                    </button>
+                  </form>
+                </section>
+              </article>
+              
+        </div>
+    </main>
 
     <script src="myportfolio.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
