@@ -1992,3 +1992,85 @@ textarea.form-input::-webkit-realizer {
     background-color: #ffdd00;
     transition: width 0.5s ease-in-out;
 }
+
+/* ===== Certificates Section ===== */
+.certificates-section {
+  margin-top: 40px;
+}
+
+.certificates-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+}
+
+.certificates-item {
+  transition: transform 0.3s;
+}
+
+.certificates-item:hover {
+  transform: translateY(-8px);
+}
+
+.certificates-card {
+  background: var(--border-gradient-onyx);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow2);
+  text-align: center;
+  transition: box-shadow var(--transition1);
+}
+
+.certificates-banner img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid var(--jet);
+}
+
+.certificates-content {
+  padding: 15px;
+}
+
+/* Title color effect */
+.certificates-title {
+  color: #ffffff; /* White by default */
+  font-size: var(--fs5);
+  font-weight: var(--fw500);
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.certificates-title:hover {
+  color: var(--orange-yellow-crayola); /* Yellow on hover */
+}
+
+.certificates-btn {
+  display: inline-block;
+  background: var(--orange-yellow-crayola);
+  color: var(--smoky-black);
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: var(--fw500);
+  transition: background var(--transition1);
+}
+
+.certificates-btn:hover {
+  background: var(--light-gray);
+  color: var(--black);
+}
+
+/* Center the Files section header */
+.certificates header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.certificates header .article-title {
+  color: #ffffff;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
