@@ -2074,3 +2074,59 @@ textarea.form-input::-webkit-realizer {
   font-size: 2rem;
   letter-spacing: 1px;
 }
+
+
+
+/* Coding Skills */
+
+.pbar{
+    color:#fff;
+    text-align:center;
+    font-size:2.3rem;
+    margin-bottom:40px;
+}
+
+.skill-category{
+    color:#fff;
+    text-align:center;
+    font-size:1.7rem;
+    margin:40px 0 25px;
+    font-weight:600;
+}
+
+.skills-section{
+    margin-bottom:40px;
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+    gap:20px;
+}
+
+.skill-box{
+    background:#222;
+    border:1px solid #333;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    transition:.3s;
+}
+
+.skill-box:hover{
+    transform:translateY(-8px);
+    border-color:#f5c542;
+    box-shadow:0 0 15px rgba(245,197,66,.3);
+}
+
+.skill-box img{
+    width:55px;
+    height:55px;
+    margin:0 auto 12px;
+}
+
+.skill-box span{
+    color:#fff;
+    font-size:15px;
+    font-weight:500;
+}
